@@ -2,6 +2,8 @@ module.exports = {
   SM: "o SM tankou de mana shield, só levou miss, deu teleport 20x e matou @vc",
   BK: "o BK fez um combo no meio do dash e deu HK em @vc a 2km de distância",
   FE: "a FE equipou o aruan e a asa 3 e matou @vc",
+  ELFA: "a FE equipou o aruan e a asa 3 e matou @vc",
+  ELF: "a FE equipou o aruan e a asa 3 e matou @vc",
   EMG: "o MG de energia deu uma cocada de bypass em @vc e ele morreu",
   SMG: "o MG de força deu HK em @vc e morreu de reflect pra uma SU aleatória que estava farmando afk",
   MG: "@vc utilize EMG para energia e SMG para força",

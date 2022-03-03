@@ -4,8 +4,6 @@ const channels = require("./streamers");
 const credentials = require("./credentials");
 const pvp = require("./pvp");
 
-// https://dev.twitch.tv/docs/irc#privmsg-twitch-tags
-
 const [, , user] = process.argv;
 const opts = {
   identity: credentials[user],
@@ -18,10 +16,11 @@ client.on("connected", onConnectedHandler);
 client.connect();
 
 function getPhrase(arg, username) {
-  if (pvp.hasOwnProperty(arg.toUpperCase())) {
-    return pvp[arg.toUpperCase()].replace("@vc", `@${username}`);
+  arg = (arg || "").toUpperCase();
+  if (pvp.hasOwnProperty(arg)) {
+    return pvp[arg].replace("@vc", `@${username}`);
   } else {
-    return `@${username} eu não conheço a classe "${arg}"`;
+    return `@${username} eu não conheço a classe "${arg}". digite !pvp comandos para todos os comandos.`;
   }
 }
 
@@ -42,9 +41,5 @@ function onMessageHandler(target, context, msg, self) {
 
 // Called every time the bot connects to Twitch chat
 function onConnectedHandler(addr, port) {
-  //console.log(`* Connected to ${addr}:${port}`, user, channels[user]);
-  client.say(
-    `${user}`,
-    `Hello! I'm a bot that will help you with the PVP phrases.`
-  );
+  console.log(`* Connected to ${addr}:${port}`, user, channels[user]);
 }
