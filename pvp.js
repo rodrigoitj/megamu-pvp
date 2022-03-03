@@ -6,7 +6,7 @@ module.exports = {
   SMG: "o MG de força deu HK em @vc e morreu de reflect pra uma SU aleatória que estava farmando afk",
   MG: "@vc utilize EMG para energia e SMG para força",
   DL: "o DL farmou um full 10, botou batota, pendant solid, asa power e morreu pra @vc",
-  SU: "a SU matou todo mundo de reflect, incluve você @vc",
+  SU: "a SU matou todo mundo de reflect, inclusive você @vc",
   RF: "o RF engatou uma sequência de bundadas e deu HK em @vc",
   GL: "a GL secou seu AG, @vc parou de atacar, morreu e xingou a staff",
   RW: "a RW soltou uma bolinha matou @vc e a staff bufou em +3%",
