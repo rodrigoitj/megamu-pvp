@@ -1,0 +1,14 @@
+{
+  "name": "megamu-pvp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "tmi.js": "^1.8.5"
+  }
+}
